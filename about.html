@@ -1,0 +1,40 @@
+<!--mission: use the JSON from the 2012 NYC SAT Scores to return that schools info-->
+<!--By Emmanuel V, Bryan M, Tahara B, Mensur M-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--below is bootstrap for our basic styling needs-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>2012 NYC SAT Scores</title>
+</head>
+
+<body id=body>
+    <!--" app" is used to activate vue on this div. this will be used on the whole body-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="py-3" align="right">
+            <a href="https://www.schools.nyc.gov/">
+                <img src="nyclogo.png" alt="NYC-DOE Logo">
+            </a>
+        </div>
+        <p class="text-center mt-5">The 2012 NYC SAT Scores is open data and can be found by <a href="https://data.cityofnewyork.us/resource/f9bf-2cp4.json" target="_blank">clicking here.</a></p>
+    </div>
+    <button onclick="change_light()" class="fixed-bottom">Change the lights!</button>
+    <!--code below used to connect this HTML to the Javascript-->
+    <script src="main.js"></script>
+</body>
+
+</html>
